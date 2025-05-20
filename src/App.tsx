@@ -1,7 +1,7 @@
-import reactLogo from "./assets/react.svg";
 import Count from "./component/Count";
 import Lorem from "./component/Lorem";
 import Nav from "./component/Nav";
+import Aside from "./component/Aside";
 
 function App() {
   return (
@@ -41,14 +41,8 @@ function App() {
         </section>
       </article>
 
-      <aside className="col-span-3 md:col-span-1 bg-amber-700 flex justify-center items-center h-full">
-        <a href="https://react.dev" target="_blank">
-          <img
-            src={reactLogo}
-            className="w-36 m-2 hover:animate-spin"
-            alt="React logo"
-          />
-        </a>
+      <aside className="col-span-3 md:col-span-1 bg-amber-700 flex justify-center items-center h-full flex-col text-4xl">
+        <Aside />
       </aside>
 
       <section className="col-span-3 bg-amber-600 w-full h-full p-2">

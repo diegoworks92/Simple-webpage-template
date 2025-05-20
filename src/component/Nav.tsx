@@ -1,3 +1,4 @@
+import { Link, Route, Routes } from "react-router";
 import Button from "./design/Button";
 import viteLogo from "/vite.svg";
 const Nav = () => {
@@ -10,10 +11,15 @@ const Nav = () => {
           alt="Vite logo"
         />
       </a>
-      <div className="flex  text-2xl gap-6 h-14">
-        <Button name="Inicio" />
+      <div className=" flex text-2xl gap-6 h-14">
+        {/*        <Button name="Inicio" />
         <Button name="Contacto" />
         <Button name="Sobra Nosotros" />
+ */}
+
+        <Link to="/">Inicio</Link>
+        <Link to="/contacto">Contacto</Link>
+        <Link to="/sobre-nosotros">Sobre Nosotros</Link>
       </div>
     </>
   );
